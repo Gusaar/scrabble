@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Word Scorer, Nitrio Edition",
+  "description": "Let's Play Scrabble",
+  "version": "1.0",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "http://*/*"
+  ],
+  "background": {
+    "scripts": [ "scrabble.js" ]
+  },
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*" ],
+      "js": [ "jquery-3.2.1.min.js", "content.js" ],
+      "run_at": "document_end",
+      "css": [ "css.css" ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+#scrabble_notification {
+  background-color: #F6E50C;
+  display: none;
+  font-size: 12px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#scrabble_notification span {
+  display: block;
+}

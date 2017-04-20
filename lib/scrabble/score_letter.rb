@@ -1,4 +1,4 @@
-class ScoreLetter
+class Scrabble::ScoreLetter
   SCORES = {
     a: 1,
     b: 3,
@@ -30,7 +30,6 @@ class ScoreLetter
 
   def self.score(letter)
     normalized_letter = letter.downcase.to_sym
-    return 0 if letter.size > 1 || !SCORES.keys.include?(normalized_letter)
-    SCORES[normalized_letter]
+    SCORES[normalized_letter] || 0
   end
 end
